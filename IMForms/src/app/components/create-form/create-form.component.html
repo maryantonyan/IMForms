@@ -1,0 +1,27 @@
+<!-- Workspace -->
+<md-sidenav-container>
+    <app-slide-bar [forms]="elements" [open]="isMobile">
+        <div my>Form elements</div> 
+        <div [dragula]="'first-bag'" id="drag-container" elements>
+            <div class="item" *ngFor="let item of elements" [ngClass]="{'draged': dragged}"> {{item.name}}</div>
+        </div>
+    </app-slide-bar>
+
+    <div class="toolbar"  (click)="close()" [ngClass]="{'toolbarToggle':check()}" >
+        <app-toolbar [buttons]="buttons" [direction]="direction" class="pull-right"></app-toolbar>
+    </div>
+
+    <div class="area"  (click)="close()"  [ngClass]="{'areaToggle': check()}">
+        <div class="col-sm-8 col-md-8 col-xs-10 head">
+            <label id="titleForm">Title</label>
+            <hr/>
+            <!-- Screen version -->
+            <div class="drag" id="no-drop" [dragula]="'first-bag'">
+                <p id="text" class="remove" name="remove" ><span class="glyphicon glyphicon-move" id="icon"></span>Drag component here from left menu</p>
+            </div>
+
+            <div id="dropArea"></div>
+            <input id="submitButton" type="submit" value="Submit" class="btn btn-default pull-right" disabled  />
+        </div>
+    </div>
+</md-sidenav-container>

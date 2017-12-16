@@ -1,0 +1,63 @@
+@import "../../../assets/styles/bootstrap-costum/costum-variables.less";
+
+.head {
+    background-color: white !important;
+    border: 1px;
+    margin-left: 40px;
+    margin-top: 40px;
+    left: 10%;
+}
+
+#titleForm {
+    font-size: @font-size-h3;
+    text-align: left;
+    color: @brand-primary;
+}
+
+#text {
+    font-size: @font-size-h4;
+    color: @gray-lighter;
+}
+
+#icon {
+    padding-right: 10px;
+    color: @gray-lighter;
+}
+
+.drag {
+    border: 2px dashed @gray-lighter;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 0px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.drag-mobile {
+    border: 2px dashed @gray-lighter;
+    border-radius: 10px;
+    padding: 25px 0px;
+}
+
+#submitButton {
+    position: relative;
+    margin-right: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 870px) {
+    #icon {
+        margin-left: 0;
+    }
+    .head {
+        left: 0;
+    }
+    .drag {
+        padding: 25px 0px;
+        margin-top: 0;
+    }
+    #text {
+        font-size: @font-size-base;
+    }
+}

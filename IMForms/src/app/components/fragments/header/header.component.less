@@ -1,0 +1,118 @@
+@import "../../../../assets/styles/bootstrap-costum/costum-variables.less";
+.change {
+    position: absolute;
+    width: calc(~"100vw + 15px");
+}
+
+#first-row {
+    background-color: rgba(0, 150, 156, 0.8);
+    background: -webkit-radial-gradient(rgba(20, 170, 176, 0.4) 0.5%, @brand-primary);
+    background: -o-radial-gradient(rgba(20, 170, 176, 0.4) 0.5%, rgba(0, 150, 156, 0.8));
+    background: -moz-radial-gradient(rgba(20, 170, 176, 0.4) 0.5%, rgba(0, 150, 156, 0.8));
+    background: radial-gradient(@brand-primary-light 0.5%, @brand-primary);
+    background-size: cover;
+    margin-right: 0%;
+    color: #ffffff;
+    font-size: @font-size-base * 4;
+    font-family: arial;
+    box-shadow: 5px 8px 20px 0 rgba(60, 60, 60, 0.2), 0 6px 20px 0 rgba(60, 60, 60, 0.19);
+}
+
+.profile {
+    display: flex;
+    right: 15px;
+    float: right;
+    position: absolute;
+}
+
+#right-text {
+    font-size: @font-size-h4;
+    padding-top: 38px;
+}
+
+#right-text-mobile {
+    font-size: @font-size-base;
+    padding-top: 27px;
+    float: right;
+}
+
+#profile-pic {
+    padding-left: 10px;
+}
+
+#imforms {
+    font-size: @font-size-title;
+    padding: 0 0 5px 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+#imforms-login {
+    font-size: @font-size-title;
+    padding: 0 0 5px 20px;
+    outline: none;
+}
+
+#imforms-mobile {
+    display: inline;
+    font-size: @font-size-title-xs;
+    padding: 0 0 5px 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown {
+    display: inline-block;
+    float: left;
+}
+
+.dropdown>img {
+    border-radius: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+#img-mobile {
+    border-radius: 50px;
+    width: 45px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.btn-change {
+    background-color: @gray-dark;
+    color: #EAEAEA;
+}
+
+.btn-change:hover {
+    color: white;
+    background-color: @brand-primary;
+}
+
+.dropdown-content {
+    display: none;
+    right: 15px;
+    position: fixed;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hamburger-title {
+    display: flex;
+}
+
+.hamburger {
+    font-size: @font-size-h3;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .dropdown-content {
+    top: 55px;
+  } 
+
+}

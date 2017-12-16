@@ -1,0 +1,9 @@
+@import './theming';
+
+@include mat-core();
+
+$candy-app-primary: mat-palette($mat-imforms, 700);
+$candy-app-accent:  mat-palette($mat-imforms, A100,A400,A900);
+$candy-app-theme:   mat-light-theme($candy-app-primary, $candy-app-accent);
+
+@include angular-material-theme($candy-app-theme);

@@ -1,0 +1,114 @@
+[ng2-tooltip] {
+    margin: 40px;
+    border: 1px solid #ccc
+}
+
+[ng2-tooltip] .tooltip-contents {
+    border: 1px solid #ccc;
+    padding: 5px
+}
+
+[ng2-tooltip] .tooltip-down-arrow {
+    height: 10px;
+}
+
+[ng2-tooltip] .tooltip-down-arrow:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 45%;
+    bottom: 5px;
+    background: #FFFFFF;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    transform: rotate(-45deg);
+}
+
+.table-area {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 2%;
+}
+
+data-table {
+    height: 80%;
+}
+
+.area {
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    min-height: calc(100vh - 166px);
+    width: 80%;
+    position: relative;
+    float: right;
+    z-index: 0;
+    opacity: 1;
+/*    box-shadow: 0 4px 8px 0 rgba(60, 60, 60, 0.2), 0 6px 20px 0 rgba(60, 60, 60, 0.19);*/
+     box-shadow: 0 8px 16px 8px rgba(60, 60, 60, 0.2), 0 6px 20px 0 rgba(60, 60, 60, 0.19)
+}
+
+
+.area-before-init {
+    opacity: 0;
+}
+
+.areaToggle {
+    width: 100vw;
+    margin-top: 98px;
+}
+
+@media screen and (max-width: 1300px) {
+    .area {
+        width: calc(100vw - 300px);
+        ;
+    }
+}
+
+@media screen and (max-width: 801px) {
+    .area {
+        width: calc(100vw - 300px);
+    }
+    .table-area {
+      /*  transform: scale(0.7);*/
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .area {
+        width: 100vw;
+        min-height: calc(100vh - 104px);
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: 0;
+	margin-bottom: 0;
+    }
+    .table-area {
+        margin-top: 0;
+        margin-left: 0;
+      /*  transform: scale(0.8);*/
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .table-area {
+        margin-top: 0;
+/*        transform: scale(0.7);*/
+   }
+}
+
+@media screen and (min-width: 1700px) {
+    .area {
+        width: 82%;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .area {
+        width: 84%;
+    }
+}

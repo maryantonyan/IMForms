@@ -1,0 +1,19 @@
+html,body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: table;
+    position: relative;
+}
+
+div.mat-paginator-range-label {
+    display: none;
+}
+
+button.mat-paginator-navigation-next.mat-icon-button {
+    display: none;
+}
+
+button.mat-paginator-navigation-previous.mat-icon-button {
+    display: none;
+}

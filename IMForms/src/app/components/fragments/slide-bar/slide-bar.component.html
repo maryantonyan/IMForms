@@ -1,0 +1,21 @@
+<md-sidenav #sidenav  align="left" mode="side" [opened]="isMobile" disableClose=false >
+    <div *ngIf="forms">
+        <div class="title" >
+            <ng-content select='[my]'></ng-content>
+        </div>
+    <ng-content select='[elements]'> </ng-content>
+    </div>
+    <div *ngIf="saved">
+        <div class="title">
+            <ng-content select='[savedForm]'></ng-content>
+        </div>
+        <ng-content select='[savedForms]'> </ng-content>
+    </div>
+    <div *ngIf="sharedForms">
+        <div class="title">
+            <ng-content select='[shared]'></ng-content>
+        </div>
+        <ng-content select='[sharedForms]'> </ng-content>
+    </div>
+</md-sidenav>
+
